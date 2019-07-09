@@ -185,8 +185,8 @@ th {
 }
 body {
   position: relative;
-  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
+  font-family: "Microsoft YaHei", Verdana, sans-serif;
+  font-size: 16px;
   line-height: 2;
   color: #555;
   background: #eee;
@@ -203,7 +203,7 @@ body {
 }
 @media (min-width: 1200px) {
   body {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 h1,
@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: 'Georgia', 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: Georgia, sans;
 }
 h1,
 h2,
@@ -320,7 +320,7 @@ blockquote cite::before {
   padding: 0 5px;
 }
 dt {
-  font-weight: 700;
+  font-weight: 600;
 }
 dd {
   margin: 0;
@@ -506,14 +506,14 @@ pre,
   overflow: auto;
   margin: 20px 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 13px;
   color: #4d4d4c;
   background: #f7f7f7;
   line-height: 1.6;
 }
 pre,
 code {
-  font-family: consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
+  font-family: "Input Mono", "PT Mono", Consolas, Monaco, Menlo, monospace;
 }
 code {
   overflow-wrap: break-word;
@@ -522,7 +522,7 @@ code {
   color: #555;
   background: #eee;
   border-radius: 3px;
-  font-size: 14px;
+  font-size: 13px;
 }
 pre {
   padding: 10px;
@@ -1255,7 +1255,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: -20px auto 15px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1478,7 +1478,7 @@ pre .javascript .function {
   overflow-wrap: break-word;
   word-wrap: break-word;
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
 }
 .posts-expand .post-title-link {
   display: inline-block;
@@ -1850,7 +1850,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffd021;
+  background: #fffff0;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2497,7 +2497,7 @@ ul.breadcrumb {
   margin: 1em 0;
   padding: 0 2em;
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
 }
 ul.breadcrumb li {
   display: inline;
@@ -3140,12 +3140,12 @@ ul.breadcrumb li+li:last-child {
 }
 .headband {
   height: 3px;
-  background: #497fb0;
+  background: #94d5fe;
 }
 .site-meta {
-  padding: 20px 0;
+  padding: 32px 0;
   color: #fff;
-  background: #326fa6;
+  background: #94d5fe;
 }
 .site-subtitle {
   margin-top: 10px;
@@ -3163,7 +3163,7 @@ ul.breadcrumb li+li:last-child {
   border-bottom: 1px solid #fc6423;
 }
 .content-inner {
-  height: 125px;
+  height: 142px;
   background-image: url("/images/banner.png");
   background-size: cover;
 }
@@ -3177,6 +3177,7 @@ ul.breadcrumb li+li:last-child {
 }
 .site-subtitle {
   margin-top: 7px;
+  background: #94d5fe;
 }
 .links-of-author-item {
   width: 90%;
