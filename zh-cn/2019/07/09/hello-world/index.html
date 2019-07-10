@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.proxy.ustclug.org/css?family=Lato:300,300italic,400,400italic,700,700italic|Georgia:300,300italic,400,400italic,700,700italic|Georgia:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+  
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<link href="/zh-cn/css/main.css?v=6.5.0" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/zh-cn/images/apple-touch-icon-next.png?v=6.5.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/zh-cn/images/favicon-32px.ico?v=6.5.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/zh-cn/images/favicon-16px.ico?v=6.5.0">
+
+
+  <link rel="mask-icon" href="/zh-cn/images/logo.svg?v=6.5.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/zh-cn/',
+    scheme: 'Gemini',
+    version: '6.5.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="个人简介张华，副研究员，硕士研究生导师。于2015年在天津大学获得博士学位，2015-2017年在中国科学院信息工程研究所任助理研究员，2018年至今在中国科学院信息工程研究所任副研究员。长期从事基于深度学习的多媒体内容感知，视频行为识别，计算机视觉，机器学习，人工智能等方面的研究，在国内外期刊和国际会议上发表论文二十余篇，其中 IEEE/ACM 汇刊论文和CCF-A类国际会议论文十余篇，谷歌学术">
+<meta property="og:type" content="article">
+<meta property="og:title" content="&lt;font size = 6&gt;We are seeking passionate and innovative students. Please send me your CV if interested. Email:zhanghua@iie.ac.cn">
+<meta property="og:url" content="/zh-cn/2019/07/09/hello-world/index.html">
+<meta property="og:site_name" content="张华">
+<meta property="og:description" content="个人简介张华，副研究员，硕士研究生导师。于2015年在天津大学获得博士学位，2015-2017年在中国科学院信息工程研究所任助理研究员，2018年至今在中国科学院信息工程研究所任副研究员。长期从事基于深度学习的多媒体内容感知，视频行为识别，计算机视觉，机器学习，人工智能等方面的研究，在国内外期刊和国际会议上发表论文二十余篇，其中 IEEE/ACM 汇刊论文和CCF-A类国际会议论文十余篇，谷歌学术">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-07-10T06:11:14.055Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="&lt;font size = 6&gt;We are seeking passionate and innovative students. Please send me your CV if interested. Email:zhanghua@iie.ac.cn">
+<meta name="twitter:description" content="个人简介张华，副研究员，硕士研究生导师。于2015年在天津大学获得博士学位，2015-2017年在中国科学院信息工程研究所任助理研究员，2018年至今在中国科学院信息工程研究所任副研究员。长期从事基于深度学习的多媒体内容感知，视频行为识别，计算机视觉，机器学习，人工智能等方面的研究，在国内外期刊和国际会议上发表论文二十余篇，其中 IEEE/ACM 汇刊论文和CCF-A类国际会议论文十余篇，谷歌学术">
+
+
+
+
+
+
+  <link rel="canonical" href="/zh-cn/2019/07/09/hello-world/">
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title><font size="6">We are seeking passionate and innovative students. Please send me your CV if interested. Email:zhanghua@iie.ac.cn | 张华</font></title>
+  
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/zh-cn/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">张华</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">中国科学院信息工程研究所, 副研究员</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/zh-cn/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-publications">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/zh-cn/publications/" rel="section"><i class="menu-item-icon fa fa-fw fa-file"></i> <br>发表论文</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-awards">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/zh-cn/awards/" rel="section"><i class="menu-item-icon fa fa-fw fa-trophy"></i> <br>荣誉奖励</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-services">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/zh-cn/services/" rel="section"><i class="menu-item-icon fa fa-fw fa-bookmark"></i> <br>学术服务</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-commonweal">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/zh-cn/../" rel="section"><i class="menu-item-icon fa fa-fw fa-language"></i> <br>English</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            <div class="content-inner"></div>
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="/zh-cn/zh-cn/2019/07/09/hello-world/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="张华">
+      <meta itemprop="description" content="副研究员<br>中国科学院信息工程研究所<br>通信地址：北京市海淀区杏石口路65号益园文创中心C区3号楼303<br>电子邮箱：zhanghua@iie.ac.cn<br>邮政编码：100093">
+      <meta itemprop="image" content="/zh-cn/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张华">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline"><font size="6">We are seeking passionate and innovative students. Please send me your CV if interested. Email:zhanghua@iie.ac.cn
+              
+            
+          </font></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h2><p>张华，副研究员，硕士研究生导师。于2015年在天津大学获得博士学位，2015-2017年在中国科学院信息工程研究所任助理研究员，2018年至今在中国科学院信息工程研究所任副研究员。长期从事基于深度学习的多媒体内容感知，视频行为识别，计算机视觉，机器学习，人工智能等方面的研究，在国内外期刊和国际会议上发表论文二十余篇，其中 IEEE/ACM 汇刊论文和CCF-A类国际会议论文十余篇，谷歌学术引用700余次，H指数为9，曾获2018年中共中央办公厅颁发的科技进步一等奖和2017年中国人工智能学会颁发的吴文俊人工智能科学技术奖自然科学奖二等奖。入选中科院信工所2017年“青年之星”计划。主持自然科学青年基金，腾讯犀牛鸟基金和参与多项国家重点研发计划与自然科学重点项目，主持多项横向项目，并与华为、腾讯、蚂蚁金服建立了长期项目合作。</p>
+<h2 id="研究领域"><a href="#研究领域" class="headerlink" title="研究领域"></a>研究领域</h2><ul>
+<li>计算机视觉</li>
+<li>多媒体信息处理</li>
+<li>机器学习</li>
+<li>人工智能</li>
+</ul>
+<h3 id="招生专业"><a href="#招生专业" class="headerlink" title="招生专业"></a>招生专业</h3><ul>
+<li>081203-计算机应用技术</li>
+<li>083900-网络空间安全</li>
+</ul>
+<h3 id="招生方向"><a href="#招生方向" class="headerlink" title="招生方向"></a>招生方向</h3><ul>
+<li>计算机视觉</li>
+<li>网络空间安全</li>
+<li>机器学习</li>
+<li>视频行为识别</li>
+<li>多模态信息处理</li>
+<li>人工智能</li>
+</ul>
+<h2 id="获奖信息"><a href="#获奖信息" class="headerlink" title="获奖信息"></a>获奖信息</h2><ul>
+<li>操晓春，王蕊，<strong>张华</strong>，任文琦. XX视频内容理解，中共中央办公厅科技进步奖，科技进步一等奖，部级，中共中央办公厅，2018</li>
+<li>操晓春，<strong>张华</strong>，张炜. 网络空间视觉内容理解，吴文俊人工智能科学技术奖，自然科学奖二等奖，省级，中国人工智能学会，2017</li>
+</ul>
+<h2 id="项目信息"><a href="#项目信息" class="headerlink" title="项目信息"></a>项目信息</h2><ul>
+<li>基于结构化语义特征的图像检索研究<br>项目类型：国家自然科学基金青年项目<br>项目时间：2016/01-2019/12<br>项目负责人：张华</li>
+<li>面向公共安全的视频信息处理技术研究 <br>项目类型：国家自然科学基金新疆联合基金重点项目<br>项目时间：2019/01-2022/12<br>课题负责人：张华</li>
+<li>中国科学院院信息工程研究所“青年之星”<br>项目类型：中国科学院信息工程研究所人才项目<br>项目时间：2018/01-2020/12<br>项目负责人：张华</li>
+<li>基于多模态信息融合的视频目标定位和特征学习<br>项目类型：CCF-腾讯犀牛鸟科研基金<br>项目时间：2018/10-2019/10<br>项目负责人：张华</li>
+<li>多模态识别技术<br>项目类型：华为横向基金<br>项目时间：2017/03-2018/03<br>项目负责人：张华</li>
+<li>基于记忆神经网络的目标行为与视频事件分析<br>项目类型：国家重点研发计划<br>项目时间：2016/07-2019/06<br>任务负责人：张华</li>
+</ul>
+<h2 id="教育背景"><a href="#教育背景" class="headerlink" title="教育背景"></a>教育背景</h2><p>2009.09 - 2015.06， 天津大学计算机学院 博士  导师：操晓春<br>2005.08 - 2009.06， 山东省烟台大学    学士</p>
+<h2 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h2><p>2018.04 - 现在，中国科学院信息工程研究所 副研究员<br>2015.07 - 2017.11，中国科学院信息工程研究所 助理研究员</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+       
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/zh-cn/images/avatar.png" alt="张华">
+            
+              <p class="site-author-name" itemprop="name">张华</p>
+              <p class="site-description motion-element" itemprop="description">副研究员<br>中国科学院信息工程研究所<br>通信地址：北京市海淀区杏石口路65号益园文创中心C区3号楼303<br>电子邮箱：zhanghua@iie.ac.cn<br>邮政编码：100093</p>
+          </div>
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:zhanghua@iie.ac.cn" title="E-Mail &rarr; mailto:zhanghua@iie.ac.cn" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://dblp.uni-trier.de/pers/hd/z/Zhang_0008:Hua" title="DBLP &rarr; https://dblp.uni-trier.de/pers/hd/z/Zhang_0008:Hua" rel="noopener" target="_blank"><i class="fa fa-fw fa-compass"></i>DBLP</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://scholar.google.com/citations?user=KYifAy8AAAAJ&hl=zh-CN&oi=sra" title="GoogleScholar &rarr; https://scholar.google.com/citations?user=KYifAy8AAAAJ&hl=zh-CN&oi=sra" rel="noopener" target="_blank"><i class="fa fa-fw fa-google"></i>GoogleScholar</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://www.researchgate.net/profile/Hua_Zhang62" title="Researchgate &rarr; https://www.researchgate.net/profile/Hua_Zhang62" rel="noopener" target="_blank"><i class="fa fa-fw fa-archive"></i>Researchgate</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">张华</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v6.5.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/zh-cn/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/zh-cn/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/zh-cn/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/zh-cn/js/src/utils.js?v=6.5.0"></script>
+
+  <script type="text/javascript" src="/zh-cn/js/src/motion.js?v=6.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/zh-cn/js/src/affix.js?v=6.5.0"></script>
+
+  <script type="text/javascript" src="/zh-cn/js/src/schemes/pisces.js?v=6.5.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/zh-cn/js/src/scrollspy.js?v=6.5.0"></script>
+<script type="text/javascript" src="/zh-cn/js/src/post-details.js?v=6.5.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/zh-cn/js/src/bootstrap.js?v=6.5.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
